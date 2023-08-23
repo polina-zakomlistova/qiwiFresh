@@ -4,7 +4,10 @@
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/general.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/main.css" />
 
         <title>Valutes</title>
     </head>
@@ -16,7 +19,11 @@
             <section class="valutes">
                 <h1 class="visually-hidden">Valutes</h1>
                 <select id="valutesSelect"></select>
-                <div id="descriptionValutes"></div>
+                <div id="descriptionValutes" style="display: none">
+                    <h2 id="valuteTitle"></h2>
+                    <p id="valuteData"></p>
+                    <p id="previousValuteData"></p>
+                </div>
             </section>
         </main>
 
@@ -29,6 +36,6 @@
             </address>
         </footer>
 
-        <script src="index.js"></script>
+        <script src="js/index.js" type="module"></script>
     </body>
 </html>
